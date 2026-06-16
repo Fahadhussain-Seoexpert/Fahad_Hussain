@@ -23,26 +23,32 @@ body{background:#0a0a0a;color:#ffffff;font-family:'Inter',sans-serif;overflow-x:
 #cur2{position:fixed;width:36px;height:36px;border:1.5px solid rgba(255,107,43,.45);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%)}
 body.hl #cur{width:18px;height:18px}
 body.hl #cur2{width:60px;height:60px;border-color:rgba(255,107,43,.85)}
-/* WHITE TEXT FIX */
-.spec-card, .service-card, .card, .sk-item,
-.about-card, .exp-card, .contact-card {
+/* GLOBAL WHITE TEXT FIX */
+h1, h2, h3, h4, h5, h6,
+p, span, a, li, div,
+.h1-line, .hero-desc,
+.hs-label, .hs-num,
+.sec-h2, .sec-label,
+.spec-title, .spec-desc,
+.srv-title, .srv-desc,
+.exp-role, .exp-company, .exp-date, .exp-desc,
+.about-text, .contact-text,
+.nav-link, .btn-ghost {
+  color: #ffffff !important;
+}
+
+/* Cards dark background */
+.spec-card, .srv-card, .service-card,
+[class*="card"], [class*="spec"],
+[class*="serv"], [class*="box"] {
   background: #1a1a1a !important;
-  color: #ffffff !important;
+  border-color: #333 !important;
 }
 
-.spec-card h3, .spec-card p, .spec-card span,
-.service-card h3, .service-card p,
-.card h3, .card p, .card span,
-.sk-name, .sk-pct, .exp-role, .exp-company,
-.exp-desc, .exp-date, .about-text {
-  color: #ffffff !important;
+/* Orange rakhna hai */
+.orange-word, .sec-label, .exp-company {
+  color: #f97316 !important;
 }
-
-/* Section headings */
-.sec-h2, .sec-label, h2, h3 {
-  color: #ffffff !important;
-}
-
 /* Specialize cards white background fix */
 [class*="spec"], [class*="serv"], [class*="card"] {
   background: #111111 !important;
